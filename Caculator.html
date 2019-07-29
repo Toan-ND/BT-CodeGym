@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caculator</title>
+</head>
+<body>
+<b>Caculator</b><br/><br/>
+<input type="text" id="Ov1"/>
+<input type="text" id="Ov2"/><br/><br/>
+<button type="button" onclick="Tinhtong()">Addition(+)</button>
+<button type="button" onclick="Tinhhieu()">Subtraction(-)</button>
+<button type="button" onclick="Phepnhan()">Multiplication(X)</button>
+<button type="button" onclick="Phepchia()">Division(/)</button>
+<br/>
+Kết quả là: <span id="Ketqua"></span>
+<script>
+    function Tinhtong() {
+        let gt1 = document.getElementById("Ov1").value;
+        let gt2 = document.getElementById("Ov2").value;
+        let Ov1 = parseInt(gt1);
+        let Ov2 = parseInt(gt2);
+        document.getElementById("Ketqua").innerHTML = (Ov1 + Ov2);
+    }
+
+    function Tinhhieu() {
+        let gt1 = document.getElementById("Ov1").value;
+        let gt2 = document.getElementById("Ov2").value;
+        let Ov1 = parseInt(gt1);
+        let Ov2 = parseInt(gt2);
+        document.getElementById("Ketqua").innerHTML = (Ov1 - Ov2);
+    }
+
+    function Phepnhan() {
+        let dt1 = document.getElementById("Ov1").value;
+        let dt2 = document.getElementById("Ov2").value;
+        let Ov1 = parseInt(dt1);
+        let Ov2 = parseInt(dt2);
+        document.getElementById("Ketqua").innerHTML = Ov1 * Ov2;
+    }
+
+    function Phepchia() {
+        let ta1 = document.getElementById("Ov1").value;
+        let ta2 = document.getElementById("Ov2").value;
+        let Ov1 = parseInt(ta1);
+        let Ov2 = parseInt(ta2);
+        document.getElementById("Ketqua").innerHTML = Ov1/Ov2;
+
+    }
+
+
+
+</script>
+</body>
+</html>
