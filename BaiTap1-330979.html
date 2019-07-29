@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var inputPhysicsScore;
+    var inputChemistryScore;
+    var inputBiologyScore;
+    var inputPhysicsScore = prompt("Enter the Physics Score");
+    var inputChemistryScore = prompt("Enter the Chemistry Score");
+    var inputBiologyScore = prompt("Enter the Biology Score");
+    var PhysicsScore = parseInt(inputPhysicsScore);
+    var ChemistryScore = parseInt(inputChemistryScore);
+    var BiologyScore = parseInt(inputBiologyScore);
+    var TotalScore = PhysicsScore + ChemistryScore + BiologyScore;
+    document.write("The Total Score is:" +TotalScore);
+    document.write('<br/>');
+    var MediumScore = (PhysicsScore + ChemistryScore + BiologyScore)/3;
+    document.write("The Medium Score is:" +MediumScore);
+</script>
+</body>
+</html>
