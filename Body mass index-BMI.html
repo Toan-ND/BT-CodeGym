@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Body mass index-BMI</title>
+</head>
+<body>
+<script>
+    var weigh
+    var height2
+    var BMI
+    var weigh = prompt("Nhập vào Weigh");
+    var weigh = parseInt(weigh);
+    var height2 = prompt("Nhập vào Height");
+    var height2 = parseFloat(height2);
+    var BMI = weigh / (height2 * height2);
+    if (BMI < 18.5) {
+        alert("Quá gầy");
+    }
+    if(18.5 <= BMI && BMI <= 25.0) {
+        alert("Bình thường");
+    }
+    if (25 <= BMI && BMI < 30) {
+        alert("Hơi mập");
+    }
+    if (BMI >= 30) {
+        alert("Perfect!!!")
+    }
+</script>
+</body>
+</html>
