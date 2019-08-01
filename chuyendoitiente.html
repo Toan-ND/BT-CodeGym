@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyendoitiente</title>
+</head>
+<body><h1>Caculator</h1><br/>
+<input type="text" id="hienthi">
+From Curency
+<select id="fromC">
+    <option  value="USA">USA</option>
+    <option  value="VND">ViệtNam</option>
+</select>
+To Currency
+<select id="toC">
+    <option value="USA">USA</option>
+    <option value="VND">VND</option>
+</select><br/>
+<button type="ketqua" onclick="a()">Enter</button>
+Ketqua: <span id="ketqua"></span>
+<script>
+    function a() {
+        let a = document.getElementById("hienthi").value;
+        let fromC = document.getElementById("fromC").value;
+        let toC = document.getElementById("toC").value;
+        let ketqua;
+        if (fromC == "USA") {
+            if (toC == "USA") {
+                ketqua=a;
+            } else {
+                ketqua= a * 23000;
+            }
+        } else if(fromC=="VND"){
+            if (toC=="VND"){
+                ketqua = a;
+            }else {
+                ketqua = a/23000;
+            }
+        }
+        document.getElementById("ketqua").innerHTML = ketqua
+    }
+</script>
+</body>
+</html>
