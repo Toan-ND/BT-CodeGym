@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BangCuuChuong</title>
+</head>
+<body>
+<script>
+    let ov1;
+    ov1 = "<table border='1' cellspacing='0' cellpadding='3'>";
+    for (i = 1; i <= 10; i++) {
+        ov1 += '<tr>';
+        for (j = 1; j <= 10; j++) {
+            ov1 = ov1 + "<td>" + i + 'x' + j + '=' + i * j + "</td>";
+        }
+        ov1 += '</tr>'
+    }
+    ov1 += '</table>';
+    document.write(ov1);
+
+</script>
+</body>
+</html>
