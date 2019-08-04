@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var numbers = parseInt(prompt("Nhập vào số lượng số nguyên tố"));
+    var count = 0;
+    document.writeln('<h2>Danh sach so nguyen to </h2>')
+    document.writeln('<ul>')
+    for (n = 2; n < 1000; n++) {
+        if (count < numbers) {
+            if (n == 2 || n == 3) {
+                document.writeln('<li>')
+                document.writeln(n);
+                document.writeln('</li>')
+                count++;
+            } else if (n % 2 != 0 && n % 3 != 0) {
+                document.writeln('<li>')
+                document.writeln(n);
+                document.writeln('</li>')
+                count++;
+            }
+        } else {
+            break;
+        }
+    }
+    document.writeln('</ul>');
+</script>
+</body>
+</html>
