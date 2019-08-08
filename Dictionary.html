@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<b>English-Vietnamese Dictionary<b/><br/>
+    <input type="text" id="hienthi">
+    <button id="Search" onclick="hii()">search</button>
+    <br/>
+    Ý nghĩa: <span id="ketqua"></span>
+    <script>
+        let eng = ['eat', 'and', 'learn', 'codegym'];
+        let vi = ['ăn', 'và', 'học', 'JavaScipt'];
+
+        function hii() {
+            let text = document.getElementById("hienthi").value;
+            let check = true;
+            for (i = 0; i <= eng.length; i++) {
+                if (text == eng[i]) {
+                    check = true;
+                    break;
+                } else {
+                    check = false;
+                    break;
+                }
+            }
+            if (check) {
+                document.getElementById("ketqua").innerHTML = vi[i];
+            } else {
+                alert("not found.");
+            }
+        }
+    </script>
+</body>
+</html>
