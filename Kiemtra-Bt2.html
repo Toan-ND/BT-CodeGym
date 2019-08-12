@@ -2,9 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Baitap2</title>
 </head>
 <body>
-$END$
+<script>
+    let array1 = [10, 5, 2, 8, 7, 13, 329, 12, -1, 325, 3];
+    let array2 = [14,235,1221,34,2,3,12,5,324,22,32,11]
+
+    function listPrimes(array) {
+        let array2 = [];
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] === 2 || array[i] === 3 || array[i] === 5 || array[i] === 7) {
+                array2.push(array[i]);
+            } else if (array[i] > 2 && array[i] % 2 !== 0 && array[i] % 3 !== 0 && array[i] % 5 !== 0 && array[i] % 7 !== 0) {
+                array2.push(array[i]);
+            }
+        }
+        return array2;
+    }
+
+    alert(listPrimes(array1));
+   alert(listPrimes(array2));
+
+</script>
 </body>
 </html>

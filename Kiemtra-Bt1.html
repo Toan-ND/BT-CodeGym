@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>SoNguyenTo</title>
 </head>
 <body>
-$END$
+<script>
+    let number =  parseInt(prompt(" Nhập vào số muốn kiểm tra"));
+    function isPrime() {
+        for (i = 0; i < number; i++) {
+            let check = true;
+            if (number == 2 || number == 3 || number == 5 || number == 7) {
+                check = true;
+            } else if (number % 2 != 0 && number % 3 != 0 && number % 5 != 0 && number % 7 != 0) {
+                check = true;
+            } else {
+                check = false;
+                break;
+            }return check;
+        }
+    }
+    alert(isPrime(number));
+</script>
 </body>
 </html>
